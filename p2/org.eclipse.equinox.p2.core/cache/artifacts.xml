@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?artifactRepository version='1.1.0'?>
+<repository name='download cache' type='org.eclipse.equinox.p2.artifact.repository.simpleRepository' version='1.0.0'>
+  <properties size='2'>
+    <property name='p2.system' value='true'/>
+    <property name='p2.timestamp' value='1528363548190'/>
+  </properties>
+  <mappings size='3'>
+    <rule filter='(&amp; (classifier=osgi.bundle))' output='${repoUrl}/plugins/${id}_${version}.jar'/>
+    <rule filter='(&amp; (classifier=binary))' output='${repoUrl}/binary/${id}_${version}'/>
+    <rule filter='(&amp; (classifier=org.eclipse.update.feature))' output='${repoUrl}/features/${id}_${version}.jar'/>
+  </mappings>
+  <artifacts size='3'>
+    <artifact classifier='binary' id='com.astra.ses.spell.gui.exec_root.gtk.linux.x86' version='4.0.2'>
+      <properties size='1'>
+        <property name='download.size' value='32899'/>
+      </properties>
+    </artifact>
+    <artifact classifier='binary' id='com.astra.ses.spell.gui.exec.root.feature_root' version='4.0.2'>
+      <properties size='1'>
+        <property name='download.size' value='7790'/>
+      </properties>
+    </artifact>
+    <artifact classifier='binary' id='org.eclipse.equinox.executable_root.gtk.linux.x86' version='3.8.0.v20180124-1426'>
+      <properties size='1'>
+        <property name='download.size' value='32899'/>
+      </properties>
+    </artifact>
+  </artifacts>
+</repository>
